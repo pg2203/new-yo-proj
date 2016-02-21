@@ -1,0 +1,26 @@
+<div class="header">
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header pull-left">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="js-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li ng-repeat="navItem in navItems" ng-class="{active: $index === selected}">
+            <a href="" ng-click="select($index)" ui-sref="{{navItem.link}}">{{navItem.name}}</a>
+          </li>
+        </ul>
+        <div class="navbar-text pull-right">
+          <b>Test</b>
+          <a href="" ui-sref="logout" class="glyphicon glyphicon-log-out logout">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
