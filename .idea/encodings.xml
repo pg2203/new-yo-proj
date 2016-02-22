@@ -13,11 +13,14 @@
     <file url="file://$PROJECT_DIR$/app/scripts/service/navigation/navigationService.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/main.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/partials/_navigation.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/partials/_toggledashboard.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/partials/_transfers.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/dashboard/dashboard.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/dashboard/home/about.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/dashboard/home/home.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/main.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/toggleDashboard/toggleDashboard.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/toggleDashboard/toggleDashboard.routes.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/topNav.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/transfers/transfer.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bower.json" charset="UTF-8" />

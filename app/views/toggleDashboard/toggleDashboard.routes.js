@@ -2,7 +2,7 @@
 
 angular.module('myYoProjectApp')
   .config(function ($stateProvider, $urlRouterProvider) {
-   // $urlRouterProvider.when('/dashboard', '/dashboard/home');
+    // $urlRouterProvider.when('/dashboard', '/dashboard/home');
     $stateProvider
       .state('dashboard.home',{
         parent: 'dashboard',
@@ -24,3 +24,6 @@ angular.module('myYoProjectApp')
         }
       })
   });
+/**
+ * Created by Mrudula-HomePC on 2016-02-21.
+ */
