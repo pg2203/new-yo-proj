@@ -1,0 +1,142 @@
+html,
+body {
+  overflow-x: hidden!important;
+  /*font-family: 'Source Sans Pro', sans-serif;*/
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+}
+
+.header {
+  position: relative;
+  max-height: 100px;
+  z-index: 1030;
+
+  .logo {
+    float: left;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    padding: 0 10px;
+    width: 220px;
+    font-weight: 500;
+    height: 50px;
+    display: block;
+  }
+
+  .navbar {
+    height: 50px;
+    margin-bottom: 0;
+    margin-left: 220px;
+
+
+    a {
+      color: #333333;
+    }
+    .sidebar-toggle {
+      float: left;
+      padding: 9px 5px;
+      margin-top: 8px;
+      margin-right: 0;
+      margin-bottom: 8px;
+      margin-left: 5px;
+      background-color: transparent;
+      background-image: none;
+      border: 1px solid transparent;
+      -webkit-border-radius: 0 !important;
+      -moz-border-radius: 0 !important;
+      border-radius: 0 !important;
+
+      .icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        background: #333333;
+
+        &:hover {
+          background: #999999 !important;
+        }
+      }
+      .icon-bar + .icon-bar {
+        margin-top: 4px;
+      }
+    }
+  }
+}
+//----------------------
+
+.wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.wrapper.toggled {
+  padding-left: 250px;
+}
+
+.sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.wrapper.toggled .sidebar-wrapper {
+  width: 250px;
+}
+
+.page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+
+.wrapper.toggled .page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+
+@media(min-width:768px) {
+  .wrapper {
+    padding-left: 250px;
+  }
+
+  .wrapper.toggled {
+    padding-left: 0;
+  }
+
+  .sidebar-wrapper {
+    width: 250px;
+  }
+
+  .wrapper.toggled .sidebar-wrapper {
+    width: 0;
+  }
+
+  .page-content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
+
+  .wrapper.toggled .page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+}
+
+
+

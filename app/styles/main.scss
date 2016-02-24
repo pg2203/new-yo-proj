@@ -4,6 +4,7 @@ $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bo
 // endbower
 @import "partials/transfers";
 @import "partials/navigation";
+@import "../scripts/adminDashboard/admindashboard";
 
 .browsehappy {
   margin: 0.2em 0;
