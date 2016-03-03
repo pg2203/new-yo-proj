@@ -46,9 +46,10 @@ angular.module("myYoProjectApp", [
   'ngRoute',
   'ngSanitize',
   'ngTouch',
-  'ui.router'
+  'ui.router',
+  'pascalprecht.translate',
   ])
-  .config(function($stateProvider, $urlRouterProvider){
+  .config(function($stateProvider, $urlRouterProvider, $translateProvider){
     $urlRouterProvider.otherwise("/main");
     $stateProvider
       .state("main", {
@@ -69,6 +70,14 @@ angular.module("myYoProjectApp", [
         }
       }
     })
+      .state("admin", {
+        url:"/admin",
+        views:{
+          "main": {
+            templateUrl: "scripts/adminDashboard/admindashboard.html"
+          }
+        }
+      })
     .state("logout", {
       url:"/main",
       views:{
@@ -77,6 +86,16 @@ angular.module("myYoProjectApp", [
         }
       }
     });
+    $translateProvider.useStaticFilesLoader({
+      prefix: 'lang/locale-',
+      suffix: '.json'
+    });
+
+    $translateProvider.preferredLanguage('en-CA');
+    $translateProvider.fallbackLanguage('en-CA');
+
+    // sanitizes HTML in the translation text using $sanitize
+    $translateProvider.useSanitizeValueStrategy('sanitizeParameters');
 });
 
 

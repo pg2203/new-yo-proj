@@ -2,7 +2,9 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/.bowerrc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/.gitignore" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Gruntfile.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/lang/locale-en-CA.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/app.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/controllers/dashboard.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/controllers/main.js" charset="UTF-8" />
@@ -26,9 +28,6 @@
     <file url="file://$PROJECT_DIR$/bower.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/package.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test/spec/controllers/main.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../test-grunt-yo/app/styles/main.scss" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../test-grunt-yo/karma.conf.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../test-grunt-yo/protractor.ci.conf.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../office_BM/my-client/Gruntfile.js" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
