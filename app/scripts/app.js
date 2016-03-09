@@ -48,6 +48,7 @@ angular.module("myYoProjectApp", [
   'ngTouch',
   'ui.router',
   'pascalprecht.translate',
+  'angular-loading-bar'
   ])
   .config(function($stateProvider, $urlRouterProvider, $translateProvider){
     $urlRouterProvider.otherwise("/main");
@@ -74,7 +75,8 @@ angular.module("myYoProjectApp", [
         url:"/admin",
         views:{
           "main": {
-            templateUrl: "scripts/adminDashboard/admindashboard.html"
+            templateUrl: "scripts/adminDashboard/admindashboard.html",
+            controller: 'AdminDashboardCtrl as AdminDashboardCtrl'
           }
         }
       })
@@ -96,6 +98,10 @@ angular.module("myYoProjectApp", [
 
     // sanitizes HTML in the translation text using $sanitize
     $translateProvider.useSanitizeValueStrategy('sanitizeParameters');
-});
+})
+  .config(function(cfpLoadingBarProvider) {
+    //cfpLoadingBarProvider.includeBar = true;
+    //cfpLoadingBarProvider.spinnerTemplate = '<div><span class="fa fa-spinner">Loading...</div>'
+  });
 
 
