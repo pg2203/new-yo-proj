@@ -47,6 +47,7 @@ angular.module("myYoProjectApp", [
   'ngSanitize',
   'ngTouch',
   'ui.router',
+  'ui.bootstrap',
   'pascalprecht.translate',
   'angular-loading-bar'
   ])

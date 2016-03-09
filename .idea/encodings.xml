@@ -5,9 +5,11 @@
     <file url="file://$PROJECT_DIR$/.gitignore" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Gruntfile.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/lang/locale-en-CA.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/adminDashboard/DialogModal.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/adminDashboard/_admindashboard.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/adminDashboard/adminDashboardCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/adminDashboard/admindashboard.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/adminDashboard/dialogModal.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/app.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/controllers/about.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/controllers/dashboard.js" charset="UTF-8" />
