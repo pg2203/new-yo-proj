@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('myYoProjectApp')
-  .service('ChannelAPI', function ($q, $resource, Endpoints) {
+  .service('ChannelAPI', function ($q,$http, $resource, Endpoints) {
 
    var getMenus = function () {
      //var url = Endpoints.testUrl;
@@ -20,7 +20,19 @@ angular.module('myYoProjectApp')
      deferred.resolve(mockMenus);
      return promise;
    };
+
+    function getData(){
+      return $http.get('http://jsonplaceholder.typicode.com/posts').success(successCall).error(errorcallback)
+    }
+
+    function   successCall(data){
+      return data
+    }
+    function   errorcallback(data){
+      return data
+    }
     return {
-      getMenus: getMenus
+      getMenus: getMenus,
+      getData:getData
     };
   });

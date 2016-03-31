@@ -7,7 +7,12 @@ angular.module('myYoProjectApp')
       return ChannelAPI.getMenus();
     };
 
+    var getData = function () {
+      return ChannelAPI.getData();
+    };
+
     return {
-      getMenus: getMenus
+      getMenus: getMenus,
+      getData: getData
     };
   });

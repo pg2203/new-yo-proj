@@ -1,0 +1,22 @@
+<div class="dialog-container" aria-labelledby="modalTitle">
+  <div class="modal-header">
+    <button class="close-button" ng-click="closeModal()" aria-label="close">
+      <svg-image class="close-icon"
+                 src="images/close-x.svg">
+      </svg-image>
+    </button>
+  </div>
+  <div class="message">
+    <h4 translate="{{modalMessage}}"></h4>
+  </div>
+  <div class="action-container">
+    <button class="btn"
+            ng-click="closeModal()"
+            translate="{{cancelText}}">
+    </button>
+    <button class="btn"
+            ng-click="confirm()"
+            translate="{{confirmText}}">
+    </button>
+  </div>
+</div>
